@@ -1,5 +1,5 @@
 ---
-name: DNSControl Action
+name: DNSControl Action ICME
 description: Deploy your DNS configuration to multiple providers
 author: light <admin@lighthosting.eu.org>
 branding:
