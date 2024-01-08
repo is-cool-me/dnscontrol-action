@@ -31,5 +31,5 @@ RUN chmod +x dnscontrol && \
 RUN ["dnscontrol", "version"]
 
 COPY README.md entrypoint.sh bin/filter-preview-output.sh /
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint.sh /filter-preview-output.sh
 ENTRYPOINT ["/entrypoint.sh"]
