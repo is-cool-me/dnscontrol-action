@@ -1,0 +1,21 @@
+---
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dnscontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: DNSControl push
+        uses: koenrh/dnscontrol-action@v3
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_API_USER: ${{ secrets.CLOUDFLARE_API_USER }}
+        with:
+          args: push

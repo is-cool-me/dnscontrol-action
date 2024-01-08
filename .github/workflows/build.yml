@@ -1,0 +1,20 @@
+---
+on: push
+name: build
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Dockerfilelint
+        uses: docker://replicated/dockerfilelint
+        with:
+          args: Dockerfile
+
+      - name: ShellCheck
+        run: shellcheck entrypoint.sh
+
+      - name: Build image
+        uses: docker/build-push-action@v4
