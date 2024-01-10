@@ -6,7 +6,7 @@ jobs:
     name: Run tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Dockerfilelint
         uses: docker://replicated/dockerfilelint
@@ -17,4 +17,4 @@ jobs:
         run: shellcheck entrypoint.sh
 
       - name: Build image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v4
