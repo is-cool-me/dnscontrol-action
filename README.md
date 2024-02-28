@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: DNSControl check
-        uses: is-cool-me/dnscontrol-action@vBump dnscontrol from 4.8.3 to 4.8.2
+        uses: is-cool-me/dnscontrol-action@v4.8.2
         with:
           args: check
 
