@@ -54,7 +54,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl preview
-        uses: is-cool-me/dnscontrol-action@v4.8.3
+        uses: is-cool-me/dnscontrol-action@v4.8.2
         id: dnscontrol_preview
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -134,7 +134,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: DNSControl push
-        uses: is-cool-me/dnscontrol-action@v4.8.3
+        uses: is-cool-me/dnscontrol-action@v4.8.2
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         with:
