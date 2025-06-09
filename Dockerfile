@@ -1,4 +1,4 @@
-FROM alpine:3.20.3@sha256:beefdbd8a1da6d2915566fde36db9db0b524eb737fc57cd1367effd16dc0d06d
+FROM alpine:3.22.0@sha256:8a1f59ffb675680d47db6337b49d22281a139e9d709335b492be023728e11715
 
 LABEL repository="https://github.com/is-cool-me/dnscontrol-action"
 LABEL maintainer="light <admin@lighthosting.eu.org>"
@@ -8,8 +8,8 @@ LABEL "com.github.actions.description"="Deploy your DNS configuration to multipl
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="yellow"
 
-ENV DNSCONTROL_VERSION="4.13.0"
-ENV DNSCONTROL_CHECKSUM="103fe932785bbfef47bc798e815a2ee88057be9b0f9aff696373a4ab3accfe10"
+ENV DNSCONTROL_VERSION="4.21.0"
+ENV DNSCONTROL_CHECKSUM="6ef0975a0f101bbe3b9e850dc6b4cf94b2d6d13cdf76551f6d2cc9ee605d2a3a"
 ENV USER=dnscontrol-user
 
 RUN apk -U --no-cache upgrade && \
