@@ -1,4 +1,4 @@
-FROM alpine:3.21.2@sha256:56fa17d2a7e7f168a043a2712e63aed1f8543aeafdcee47c58dcffe38ed51099
+FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
 
 LABEL repository="https://github.com/is-cool-me/dnscontrol-action"
 LABEL maintainer="light <admin@lighthosting.eu.org>"
